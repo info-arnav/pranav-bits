@@ -1,5 +1,6 @@
 let navLarge = document.querySelector(".nav-full");
 let navShort = document.querySelector(".nav-short");
+let body = document.querySelector("body");
 let columns = document.querySelectorAll(".columns-copy");
 let column = document.querySelectorAll(".column-copy");
 window.onscroll = () => {
@@ -47,5 +48,6 @@ window.addEventListener("load", () => {
     columns.forEach((e) => e.classList.add("columns"));
     column.forEach((e) => e.classList.add("column"));
   }
+  body.classList.remove("none");
 });
 //950px
